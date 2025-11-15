@@ -1,0 +1,352 @@
+<!--
+Filename: index.html
+Description: Landing page + links to other pages. Use these files as-is. Deploy all files to GitHub Pages by committing them to the repo's root (or docs/) and enable GitHub Pages.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web-based Cemetery Mapping — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Web-based Cemetery Mapping &amp; Information System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="staff.html">Staff</a>
+      <a href="visitor.html">Visitor</a>
+      <a href="mapping.html">Mapping</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Project Summary</h2>
+      <p>This repository contains a simple static front-end prototype of the <strong>Web-based Cemetery Mapping and Information Management System</strong> (based on the PDF you uploaded). Use these pages as UI templates when building your real app and backend.</p>
+    </section>
+
+    <section>
+      <h2>Modules Included (from the PDF)</h2>
+      <ul>
+        <li>Login Module (Admin / Staff)</li>
+        <li>User Account Management</li>
+        <li>Burial Information</li>
+        <li>Lot Information</li>
+        <li>Mapping / Interactive Map</li>
+        <li>Billing &amp; Payments</li>
+        <li>Reports &amp; Export</li>
+        <li>Interment Scheduling</li>
+        <li>Lot Transfer</li>
+        <li>Visitor Portal</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How to deploy on GitHub Pages</h2>
+      <ol>
+        <li>Create a new repository on GitHub.</li>
+        <li>Clone it locally and copy the files in this project (index.html, admin.html, staff.html, visitor.html, mapping.html, styles.css, script.js).</li>
+        <li>Commit and push.</li>
+        <li>On GitHub, go to Settings → Pages and set the branch (main) and root folder (/) then save.</li>
+        <li>Visit <code>https://&lt;your-username&gt;.github.io/&lt;repo-name&gt;/</code>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Notes</h2>
+      <p>These pages are static prototypes. Replace mock data and client-side examples with your real APIs and map data when ready.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Generated from: 22WEB-BASED CEMETERY MAPPING AND INFORMATION MANAGEMENT SYSTEM FOR (PDF)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+Filename: admin.html
+Description: Admin dashboard mockup. Replace mocked tables with dynamic data connected to your backend.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard — Cemetery System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="staff.html">Staff</a>
+      <a href="visitor.html">Visitor</a>
+      <a href="mapping.html">Mapping</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Login Module (Admin)</h2>
+      <form id="adminLogin">
+        <label>Contact Number<br><input type="text" name="contact" placeholder="e.g. +63 912 345 6789"></label>
+        <label>Password<br><input type="password" name="password"></label>
+        <div class="actions">
+          <button type="submit">Login</button>
+          <button type="button" id="forgotBtn">Forgot Password</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>User Account Management</h2>
+      <button id="addUserBtn">Add New User</button>
+      <input id="searchUser" placeholder="Search users...">
+      <table class="table" id="userTable">
+        <thead>
+          <tr><th>Username</th><th>Contact</th><th>Role</th><th>Status</th><th>Actions</th></tr>
+        </thead>
+        <tbody>
+          <!-- mock row -->
+          <tr><td>admin</td><td>+63 912 345 6789</td><td>Administrator</td><td>Active</td><td><button>Edit</button> <button>Deactivate</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Burial Records</h2>
+      <button id="addBurial">Add Burial Record</button>
+      <input id="searchBurial" placeholder="Search burial records">
+      <table class="table">
+        <thead><tr><th>Name</th><th>Birth</th><th>Death</th><th>Lot</th><th>Actions</th></tr></thead>
+        <tbody>
+          <tr><td>Juan Dela Cruz</td><td>1945-01-01</td><td>2020-10-10</td><td>Block A - Lot 05</td><td><button>View</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>Admin mockup — replace with server-driven pages.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+Filename: staff.html
+Description: Staff interface mockup with scheduling and payments.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Staff Portal — Cemetery System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Staff Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="staff.html">Staff</a>
+      <a href="visitor.html">Visitor</a>
+      <a href="mapping.html">Mapping</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Interment Scheduling</h2>
+      <form id="scheduleForm">
+        <label>Burial Record ID<br><input name="burialId" placeholder="e.g. BR-0001"></label>
+        <label>Date & Time<br><input type="datetime-local" name="when"></label>
+        <label>Lot / Section<br><input name="lot"></label>
+        <button type="submit">Create Schedule</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Payments</h2>
+      <button id="recordPayment">Record Payment</button>
+      <table class="table">
+        <thead><tr><th>Customer</th><th>Amount</th><th>Date</th><th>Mode</th><th>Actions</th></tr></thead>
+        <tbody>
+          <tr><td>Maria Santos</td><td>₱10,000</td><td>2025-01-15</td><td>Cash</td><td><button>Receipt</button></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <small>Staff mockup — client-side only.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+Filename: visitor.html
+Description: Public visitor portal for searching and locating graves.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Visitor Portal — Cemetery System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Visitor Portal</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="staff.html">Staff</a>
+      <a href="visitor.html">Visitor</a>
+      <a href="mapping.html">Mapping</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Search Burials</h2>
+      <input id="visitorSearch" placeholder="Search by name, surname, or lot number">
+      <button id="visitorSearchBtn">Search</button>
+      <div id="visitorResults"></div>
+    </section>
+
+    <section>
+      <h2>Interactive Map</h2>
+      <p>Click <a href="mapping.html">here</a> to open the interactive map.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Visitor portal mockup.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+Filename: mapping.html
+Description: Map page shows an example using Leaflet (CDN). Replace sample GeoJSON with real cemetery layout.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mapping — Cemetery System</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Leaflet CDN for simple interactive map demo -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="" crossorigin="" />
+  <style>
+    #map { height: 70vh; width: 100%; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Cemetery Map</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html">Admin</a>
+      <a href="staff.html">Staff</a>
+      <a href="visitor.html">Visitor</a>
+      <a href="mapping.html">Mapping</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Interactive Map (Demo)</h2>
+      <div id="map"></div>
+      <p class="muted">Demo markers and polygons below — replace with real cemetery blocks and lot GeoJSON.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>Map demo using Leaflet.</small>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([14.6, 121.0], 13); // example coords
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Example block polygon
+    const blockA = L.polygon([
+      [14.605, 121.0],
+      [14.605, 121.002],
+      [14.603, 121.002],
+      [14.603, 121.0]
+    ]).addTo(map).bindPopup('Block A');
+
+    // Example lot marker
+    const lotMarker = L.marker([14.604, 121.001]).addTo(map).bindPopup('Lot: Block A - Lot 05');
+  </script>
+</body>
+</html>
+
+
+<!--
+Filename: styles.css
+Description: Simple CSS used by all pages. Save as styles.css in the same folder.
+-->
+
+:root{--bg:#f8f9fb;--card:#fff;--accent:#0b5cff;--muted:#666}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.site-header{background:var(--card);padding:14px 18px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+.site-header h1{margin:0;font-size:18px}
+.site-header nav a{margin-left:12px;text-decoration:none;color:var(--accent)}
+.container{max-width:980px;margin:24px auto;padding:0 16px}
+.table{width:100%;border-collapse:collapse;margin-top:8px}
+.table th,.table td{padding:8px;border:1px solid #e6e9ef;text-align:left}
+input,button,select{padding:8px;border:1px solid #d3d7df;border-radius:6px}
+.actions{margin-top:8px}
+.muted{color:var(--muted)}
+footer{padding:12px 16px;text-align:center;color:var(--muted)}
+
+
+<!--
+Filename: script.js
+Description: Small client-side behavior for demo pages.
+-->
+
+// Basic demo JS — save as script.js and include in pages
+document.addEventListener('DOMContentLoaded', ()=>{
+  const forms = document.querySelectorAll('form');
+  forms.forEach(f=>f.addEventListener('submit', e=>{e.preventDefault();alert('This is a prototype. Wire to backend APIs before use.')}));
+
+  const visitorResults = document.getElementById('visitorResults');
+  if(visitorResults){
+    document.getElementById('visitorSearchBtn').addEventListener('click', ()=>{
+      visitorResults.innerHTML = '<p class="muted">No backend connected — this is a static demo. Try: "Juan"</p>';
+    });
+  }
+});
